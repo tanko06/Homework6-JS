@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework 6 JS</title>
+    <script>
+        //let arr = new Array('hello', 'world', 23, '23', null);
+        let arr = ['hello', 'world', 23, '23', null]; 
+        let type = 'string';
+        let func = function filterBy(arr, type){
+            let newArr = arr.filter(function(element){ return typeof element != type; });
+            return newArr;
+        }
+        console.log(func(arr, type));
+    </script>
+</head>
+<body>
+</body>
+</html>
